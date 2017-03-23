@@ -1,13 +1,13 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Bitcoin Core
-Comment=Connect to the Bitcoin P2P Network
-Comment[de]=Verbinde mit dem Bitcoin peer-to-peer Netzwerk
-Comment[fr]=Bitcoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Bitcoin, eşten eşe kriptografik sanal para birimi
-Exec=bitcoin-qt %u
+Name=Trollcoin Core
+Comment=Connect to the Trollcoin P2P Network
+Comment[de]=Verbinde mit dem Trollcoin peer-to-peer Netzwerk
+Comment[fr]=Trollcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Trollcoin, eşten eşe kriptografik sanal para birimi
+Exec=trollcoin-qt %u
 Terminal=false
 Type=Application
-Icon=bitcoin128
-MimeType=x-scheme-handler/bitcoin;
+Icon=trollcoin128
+MimeType=x-scheme-handler/trollcoin;
 Categories=Office;Finance;

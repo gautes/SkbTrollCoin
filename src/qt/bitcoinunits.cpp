@@ -1,29 +1,29 @@
-// Copyright (c) 2011-2016 The Bitcoin Core developers
+// Copyright (c) 2011-2016 The Trollcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "bitcoinunits.h"
+#include "trollcoinunits.h"
 
 #include "primitives/transaction.h"
 
 #include <QStringList>
 
-BitcoinUnits::BitcoinUnits(QObject *parent):
+TrollcoinUnits::TrollcoinUnits(QObject *parent):
         QAbstractListModel(parent),
         unitlist(availableUnits())
 {
 }
 
-QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
+QList<TrollcoinUnits::Unit> TrollcoinUnits::availableUnits()
 {
-    QList<BitcoinUnits::Unit> unitlist;
+    QList<TrollcoinUnits::Unit> unitlist;
     unitlist.append(BTC);
     unitlist.append(mBTC);
     unitlist.append(uBTC);
     return unitlist;
 }
 
-bool BitcoinUnits::valid(int unit)
+bool TrollcoinUnits::valid(int unit)
 {
     switch(unit)
     {
@@ -36,7 +36,7 @@ bool BitcoinUnits::valid(int unit)
     }
 }
 
-QString BitcoinUnits::name(int unit)
+QString TrollcoinUnits::name(int unit)
 {
     switch(unit)
     {
@@ -47,18 +47,18 @@ QString BitcoinUnits::name(int unit)
     }
 }
 
-QString BitcoinUnits::description(int unit)
+QString TrollcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Bitcoins");
-    case mBTC: return QString("Milli-Bitcoins (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Bitcoins (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case BTC: return QString("Trollcoins");
+    case mBTC: return QString("Milli-Trollcoins (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-Trollcoins (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
 
-qint64 BitcoinUnits::factor(int unit)
+qint64 TrollcoinUnits::factor(int unit)
 {
     switch(unit)
     {
@@ -69,7 +69,7 @@ qint64 BitcoinUnits::factor(int unit)
     }
 }
 
-int BitcoinUnits::decimals(int unit)
+int TrollcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
@@ -80,7 +80,7 @@ int BitcoinUnits::decimals(int unit)
     }
 }
 
-QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, SeparatorStyle separators)
+QString TrollcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, SeparatorStyle separators)
 {
     // Note: not using straight sprintf here because we do NOT want
     // localized number formatting.
@@ -119,12 +119,12 @@ QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, Separator
 // Please take care to use formatHtmlWithUnit instead, when
 // appropriate.
 
-QString BitcoinUnits::formatWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
+QString TrollcoinUnits::formatWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
 {
     return format(unit, amount, plussign, separators) + QString(" ") + name(unit);
 }
 
-QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
+QString TrollcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
 {
     QString str(formatWithUnit(unit, amount, plussign, separators));
     str.replace(QChar(THIN_SP_CP), QString(THIN_SP_HTML));
@@ -132,7 +132,7 @@ QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool p
 }
 
 
-bool BitcoinUnits::parse(int unit, const QString &value, CAmount *val_out)
+bool TrollcoinUnits::parse(int unit, const QString &value, CAmount *val_out)
 {
     if(!valid(unit) || value.isEmpty())
         return false; // Refuse to parse invalid unit or empty string
@@ -171,23 +171,23 @@ bool BitcoinUnits::parse(int unit, const QString &value, CAmount *val_out)
     return ok;
 }
 
-QString BitcoinUnits::getAmountColumnTitle(int unit)
+QString TrollcoinUnits::getAmountColumnTitle(int unit)
 {
     QString amountTitle = QObject::tr("Amount");
-    if (BitcoinUnits::valid(unit))
+    if (TrollcoinUnits::valid(unit))
     {
-        amountTitle += " ("+BitcoinUnits::name(unit) + ")";
+        amountTitle += " ("+TrollcoinUnits::name(unit) + ")";
     }
     return amountTitle;
 }
 
-int BitcoinUnits::rowCount(const QModelIndex &parent) const
+int TrollcoinUnits::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
     return unitlist.size();
 }
 
-QVariant BitcoinUnits::data(const QModelIndex &index, int role) const
+QVariant TrollcoinUnits::data(const QModelIndex &index, int role) const
 {
     int row = index.row();
     if(row >= 0 && row < unitlist.size())
@@ -207,7 +207,7 @@ QVariant BitcoinUnits::data(const QModelIndex &index, int role) const
     return QVariant();
 }
 
-CAmount BitcoinUnits::maxMoney()
+CAmount TrollcoinUnits::maxMoney()
 {
     return MAX_MONEY;
 }

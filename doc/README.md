@@ -1,41 +1,41 @@
-Bitcoin Core 0.14.99
+Trollcoin Core 0.14.99
 =====================
 
 Setup
 ---------------------
-Bitcoin Core is the original Bitcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Bitcoin transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Trollcoin Core is the original Trollcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Trollcoin transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Bitcoin Core, visit [bitcoincore.org](https://bitcoincore.org/en/releases/).
+To download Trollcoin Core, visit [trollcoincore.org](https://trollcoincore.org/en/releases/).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Bitcoin on your native platform.
+The following are some helpful notes on how to run Trollcoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/bitcoin-qt` (GUI) or
-- `bin/bitcoind` (headless)
+- `bin/trollcoin-qt` (GUI) or
+- `bin/trollcoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run bitcoin-qt.exe.
+Unpack the files into a directory, and then run trollcoin-qt.exe.
 
 ### OS X
 
-Drag Bitcoin-Core to your applications folder, and then run Bitcoin-Core.
+Drag Trollcoin-Core to your applications folder, and then run Trollcoin-Core.
 
 ### Need Help?
 
-* See the documentation at the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
+* See the documentation at the [Trollcoin Wiki](https://en.trollcoin.it/wiki/Main_Page)
 for help and more information.
-* Ask for help on [#bitcoin](http://webchat.freenode.net?channels=bitcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=bitcoin).
-* Ask for help on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Technical Support board](https://bitcointalk.org/index.php?board=4.0).
+* Ask for help on [#trollcoin](http://webchat.freenode.net?channels=trollcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=trollcoin).
+* Ask for help on the [TrollcoinTalk](https://trollcointalk.org/) forums, in the [Technical Support board](https://trollcointalk.org/index.php?board=4.0).
 
 Building
 ---------------------
-The following are developer notes on how to build Bitcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Trollcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -45,12 +45,12 @@ The following are developer notes on how to build Bitcoin on your native platfor
 
 Development
 ---------------------
-The Bitcoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Trollcoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/trollcoin/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -61,9 +61,9 @@ The Bitcoin repo's [root README](/README.md) contains relevant information on th
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Development & Technical Discussion board](https://bitcointalk.org/index.php?board=6.0).
-* Discuss project-specific development on #bitcoin-core-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bitcoin-core-dev).
-* Discuss general Bitcoin development on #bitcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bitcoin-dev).
+* Discuss on the [TrollcoinTalk](https://trollcointalk.org/) forums, in the [Development & Technical Discussion board](https://trollcointalk.org/index.php?board=6.0).
+* Discuss project-specific development on #trollcoin-core-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=trollcoin-core-dev).
+* Discuss general Trollcoin development on #trollcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=trollcoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

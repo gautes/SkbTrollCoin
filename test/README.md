@@ -1,4 +1,4 @@
-This directory contains integration tests that test bitcoind and its
+This directory contains integration tests that test trollcoind and its
 utilities in their entirety. It does not contain unit tests, which
 can be found in [/src/test](/src/test), [/src/wallet/test](/src/wallet/test),
 etc.
@@ -6,10 +6,10 @@ etc.
 There are currently two sets of tests in this directory:
 
 - [functional](/test/functional) which test the functionality of 
-bitcoind and bitcoin-qt by interacting with them through the RPC and P2P
+trollcoind and trollcoin-qt by interacting with them through the RPC and P2P
 interfaces.
-- [util](test/util) which tests the bitcoin utilities, currently only
-bitcoin-tx.
+- [util](test/util) which tests the trollcoin utilities, currently only
+trollcoin-tx.
 
 The util tests are run as part of `make check` target. The functional
 tests are run by the travis continuous build process whenever a pull
@@ -53,9 +53,9 @@ Possible options, which apply to each individual test run:
 
 ```
   -h, --help            show this help message and exit
-  --nocleanup           Leave bitcoinds and test.* datadir on exit or error
-  --noshutdown          Don't stop bitcoinds after the test execution
-  --srcdir=SRCDIR       Source directory containing bitcoind/bitcoin-cli
+  --nocleanup           Leave trollcoinds and test.* datadir on exit or error
+  --noshutdown          Don't stop trollcoinds after the test execution
+  --srcdir=SRCDIR       Source directory containing trollcoind/trollcoin-cli
                         (default: ../../src)
   --tmpdir=TMPDIR       Root directory for datadirs
   --tracerpc            Print out all RPC calls as they are made
@@ -80,13 +80,13 @@ to recover with:
 
 ```bash
 rm -rf cache
-killall bitcoind
+killall trollcoind
 ```
 
 Util tests
 ----------
 
-Util tests can be run locally by running `test/util/bitcoin-util-test.py`. 
+Util tests can be run locally by running `test/util/trollcoin-util-test.py`. 
 Use the `-v` option for verbose output.
 
 Writing functional tests
