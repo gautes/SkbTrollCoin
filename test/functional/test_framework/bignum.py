@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Big number routines.
 
-This file is copied from python-trollcoinlib.
+This file is copied from python-bitcoinlib.
 """
 
 import struct
@@ -78,7 +78,7 @@ def mpi2bn(s):
         return -v
     return v
 
-# trollcoin-specific little endian format, with implicit size
+# bitcoin-specific little endian format, with implicit size
 def mpi2vch(s):
     r = s[4:]           # strip size
     r = r[::-1]         # reverse string, converting BE->LE

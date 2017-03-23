@@ -1,5 +1,5 @@
-Building Trollcoin
+Building Bitcoin
 ================
 
 See doc/build-*.md for instructions on building the various
-elements of the Trollcoin Core reference implementation of Trollcoin.
+elements of the Bitcoin Core reference implementation of Bitcoin.

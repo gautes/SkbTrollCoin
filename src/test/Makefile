@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. trollcoin_test
+	$(MAKE) -C .. bitcoin_test
 clean:
-	$(MAKE) -C .. trollcoin_test_clean
+	$(MAKE) -C .. bitcoin_test_clean
 check:
-	$(MAKE) -C .. trollcoin_test_check
+	$(MAKE) -C .. bitcoin_test_check

@@ -1,15 +1,15 @@
 [Unit]
-Description=Trollcoin's distributed currency daemon
+Description=Bitcoin's distributed currency daemon
 After=network.target
 
 [Service]
-User=trollcoin
-Group=trollcoin
+User=bitcoin
+Group=bitcoin
 
 Type=forking
-PIDFile=/var/lib/trollcoind/trollcoind.pid
-ExecStart=/usr/bin/trollcoind -daemon -pid=/var/lib/trollcoind/trollcoind.pid \
--conf=/etc/trollcoin/trollcoin.conf -datadir=/var/lib/trollcoind -disablewallet
+PIDFile=/var/lib/bitcoind/bitcoind.pid
+ExecStart=/usr/bin/bitcoind -daemon -pid=/var/lib/bitcoind/bitcoind.pid \
+-conf=/etc/bitcoin/bitcoin.conf -datadir=/var/lib/bitcoind -disablewallet
 
 Restart=always
 PrivateTmp=true

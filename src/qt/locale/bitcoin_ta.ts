@@ -52,7 +52,7 @@
     </message>
     </context>
 <context>
-    <name>TrollcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;கண்ணோட்டம்</translation>
@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Trollcoin</source>
-        <translation>Trollcoin</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -706,10 +706,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>trollcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
-        <source>Trollcoin Core</source>
-        <translation>Trollcoin மையம்</translation>
+        <source>Bitcoin Core</source>
+        <translation>Bitcoin மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

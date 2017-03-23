@@ -45,7 +45,7 @@ Alihkan fail data ke dalam tab semasa</translation>
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>TrollcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Options...</source>
         <translation>Pilihan</translation>
@@ -172,6 +172,6 @@ Alihkan fail data ke dalam tab semasa</translation>
     </message>
     </context>
 <context>
-    <name>trollcoin-core</name>
+    <name>bitcoin-core</name>
     </context>
 </TS>

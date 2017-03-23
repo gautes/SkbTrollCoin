@@ -1,9 +1,9 @@
-// Copyright (c) 2009-2016 The Trollcoin Core developers
+// Copyright (c) 2009-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/trollcoin-config.h"
+#include "config/bitcoin-config.h"
 #endif
 
 #include "chainparams.h"
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
     // Don't remove this, it's needed to access
     // QApplication:: and QCoreApplication:: in the tests
     QApplication app(argc, argv);
-    app.setApplicationName("Trollcoin-Qt-test");
+    app.setApplicationName("Bitcoin-Qt-test");
 
     SSL_library_init();
 

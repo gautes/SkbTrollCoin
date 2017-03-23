@@ -1,2 +1,2 @@
-contrib/trollcoind.bash-completion	trollcoind
-contrib/trollcoin-cli.bash-completion	trollcoin-cli
+contrib/bitcoind.bash-completion	bitcoind
+contrib/bitcoin-cli.bash-completion	bitcoin-cli

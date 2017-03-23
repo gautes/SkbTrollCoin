@@ -56,10 +56,10 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>TrollcoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
-        <source>Trollcoin</source>
-        <translation>Trollcoin Core</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin Core</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -226,14 +226,14 @@
     </message>
     </context>
 <context>
-    <name>trollcoin-core</name>
+    <name>bitcoin-core</name>
     <message>
-        <source>Trollcoin Core</source>
-        <translation>Trollcoin Core</translation>
+        <source>Bitcoin Core</source>
+        <translation>Bitcoin Core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>trollcoin-core</translation>
+        <translation>bitcoin-core</translation>
     </message>
     <message>
         <source>Information</source>
